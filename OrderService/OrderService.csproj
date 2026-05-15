@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -7,8 +7,216 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net10.0\OrderService.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net10.0\OrderService.GlobalUsings.g.cs" />
+    <Compile Include="obj\Debug\net10.0\OrderService.MvcApplicationPartsAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net10.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net10.0\appsettings.json" />
+    <Content Include="bin\Debug\net10.0\OrderService.deps.json" />
+    <Content Include="bin\Debug\net10.0\OrderService.runtimeconfig.json" />
+    <Content Include="bin\Debug\net10.0\OrderService.staticwebassets.endpoints.json" />
+    <Content Include="obj\Debug\net10.0\ApiEndpoints.json" />
+    <Content Include="obj\Debug\net10.0\EndpointInfo\OrderService.json" />
+    <Content Include="obj\Debug\net10.0\OrderService.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net10.0\OrderService.sourcelink.json" />
+    <Content Include="obj\Debug\net10.0\rjsmcshtml.dswa.cache.json" />
+    <Content Include="obj\Debug\net10.0\rjsmrazor.dswa.cache.json" />
+    <Content Include="obj\Debug\net10.0\rpswa.dswa.cache.json" />
+    <Content Include="obj\Debug\net10.0\staticwebassets.build.endpoints.json" />
+    <Content Include="obj\Debug\net10.0\staticwebassets.build.json" />
+    <Content Include="obj\Debug\net10.0\staticwebassets.references.upToDateCheck.txt" />
+    <Content Include="obj\Debug\net10.0\staticwebassets.removed.txt" />
+    <Content Include="obj\OrderService.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net10.0\AutoMapper.dll" />
+    <None Include="bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll" />
+    <None Include="bin\Debug\net10.0\Azure.Core.dll" />
+    <None Include="bin\Debug\net10.0\Azure.Identity.dll" />
+    <None Include="bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\FluentValidation.AspNetCore.dll" />
+    <None Include="bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll" />
+    <None Include="bin\Debug\net10.0\FluentValidation.dll" />
+    <None Include="bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\Humanizer.dll" />
+    <None Include="bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\MediatR.Contracts.dll" />
+    <None Include="bin\Debug\net10.0\MediatR.dll" />
+    <None Include="bin\Debug\net10.0\MediatR.Extensions.Microsoft.DependencyInjection.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.CodeAnalysis.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.OpenApi.dll" />
+    <None Include="bin\Debug\net10.0\Microsoft.SqlServer.Server.dll" />
+    <None Include="bin\Debug\net10.0\Mono.TextTemplating.dll" />
+    <None Include="bin\Debug\net10.0\OrderService.dll" />
+    <None Include="bin\Debug\net10.0\OrderService.exe" />
+    <None Include="bin\Debug\net10.0\OrderService.pdb" />
+    <None Include="bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.AspNetCore.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.Extensions.Hosting.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.Extensions.Logging.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.Formatting.Compact.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.Settings.Configuration.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.Sinks.Console.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.Sinks.Debug.dll" />
+    <None Include="bin\Debug\net10.0\Serilog.Sinks.File.dll" />
+    <None Include="bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Debug\net10.0\System.ClientModel.dll" />
+    <None Include="bin\Debug\net10.0\System.CodeDom.dll" />
+    <None Include="bin\Debug\net10.0\System.Composition.AttributedModel.dll" />
+    <None Include="bin\Debug\net10.0\System.Composition.Convention.dll" />
+    <None Include="bin\Debug\net10.0\System.Composition.Hosting.dll" />
+    <None Include="bin\Debug\net10.0\System.Composition.Runtime.dll" />
+    <None Include="bin\Debug\net10.0\System.Composition.TypedParts.dll" />
+    <None Include="bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\net10.0\System.Memory.Data.dll" />
+    <None Include="bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="obj\Debug\net10.0\apphost.exe" />
+    <None Include="obj\Debug\net10.0\EndpointInfo\OrderService.OpenApiFiles.cache" />
+    <None Include="obj\Debug\net10.0\OrderSer.4493321F.Up2Date" />
+    <None Include="obj\Debug\net10.0\OrderService.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net10.0\OrderService.assets.cache" />
+    <None Include="obj\Debug\net10.0\OrderService.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net10.0\OrderService.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net10.0\OrderService.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net10.0\OrderService.dll" />
+    <None Include="obj\Debug\net10.0\OrderService.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net10.0\OrderService.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net10.0\OrderService.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net10.0\OrderService.pdb" />
+    <None Include="obj\Debug\net10.0\refint\OrderService.dll" />
+    <None Include="obj\Debug\net10.0\ref\OrderService.dll" />
+    <None Include="obj\Debug\net10.0\staticwebassets.build.json.cache" />
+    <None Include="obj\Debug\net10.0\swae.build.ex.cache" />
+    <None Include="obj\OrderService.csproj.nuget.g.props" />
+    <None Include="obj\OrderService.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Data\" />
+    <Folder Include="Domain\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Logging\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="obj\Debug\net10.0\staticwebassets\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="Validators\" />
   </ItemGroup>
 
 </Project>

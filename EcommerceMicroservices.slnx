@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="EcommerceMicroservices/EcommerceMicroservices.csproj" />
   <Project Path="OrderService/OrderService.csproj" />
 </Solution>
