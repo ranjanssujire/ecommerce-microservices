@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EcommerceMicroservices/EcommerceMicroservices.csproj" />
+  <Project Path="OrderService/OrderService.csproj" />
+</Solution>
