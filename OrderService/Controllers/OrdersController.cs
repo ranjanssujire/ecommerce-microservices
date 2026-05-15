@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using OrderService.Data;
 using OrderService.Domain;
 using OrderService.DTOs;
+using OrderService.Application.Services;
 
 namespace OrderService.Controllers;
 
@@ -10,23 +11,22 @@ namespace OrderService.Controllers;
 [Route("api/[controller]")]
 public class OrdersController : ControllerBase
 {
-    private readonly ApplicationDbContext _context;
+    private readonly OrderService.Application.Services.OrderService _service;
 
-    public OrdersController(ApplicationDbContext context)
+    public OrdersController(OrderService.Application.Services.OrderService service)
     {
-        _context = context;
+        _service = service;
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetOrders()
+    public async Task<IActionResult> GetAll()
     {
-        var orders = await _context.Orders.ToListAsync();
-
-        return Ok(orders);
+        var result = await _service.GetAllOrders();
+        return Ok(result);
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateOrder(CreateOrderDto dto)
+    public async Task<IActionResult> Create(CreateOrderDto dto)
     {
         var order = new Order
         {
@@ -35,9 +35,7 @@ public class OrdersController : ControllerBase
             Price = dto.Price
         };
 
-        _context.Orders.Add(order);
-
-        await _context.SaveChangesAsync();
+        await _service.CreateOrder(order);
 
         return Ok(order);
     }
