@@ -205,18 +205,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\" />
-    <Folder Include="Data\" />
-    <Folder Include="Domain\" />
-    <Folder Include="DTOs\" />
-    <Folder Include="Infrastructure\" />
-    <Folder Include="Logging\" />
-    <Folder Include="Mappings\" />
-    <Folder Include="Middleware\" />
     <Folder Include="obj\Debug\net10.0\staticwebassets\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
-    <Folder Include="Validators\" />
   </ItemGroup>
 
 </Project>
